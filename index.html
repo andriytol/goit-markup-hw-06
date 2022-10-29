@@ -95,17 +95,20 @@
                   </svg>
                 </div>
 
-                <div class="form-field">
+                <div class="form-field form-field-tex">
                   <label class="form-label" for="comment">Коментар</label>
                   <textarea class="form-comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
                 </div>
 
-                <div class="form-confidentiality">
-                  <input type="checkbox" name="" id="confidentiality" />
-                  <label for="confidentiality"
-                    >Погоджуюся з розсилкою та приймаю
-                    <a class="form-link" href="">Умови договору</a></label
-                  >
+                <div class="form-conf">
+                  <div class="checkbox-div">
+                    <label class="conf-label">
+                      <input class="conf-checkbox" type="checkbox" name="conf" />
+                      <span class="conf-svg"></span>
+                       Погоджуюся з розсилкою та приймаю
+                    </label>
+                  </div>
+                    <a class="form-link" href="">Умови договору</a>
                 </div>
 
                 <button class="form-last-button" type="submit">Відправити</button>
@@ -518,14 +521,14 @@
 
         <div class="subscription">
           <b class="subscription-title">Підпишіться на розсилку</b>
-          <div class="subscription-submit">
+          <form class="subscription-submit">
             <input class="subscription-email" type="email" placeholder="E-mail">
             <button class="subscription-button" type="submit">Підписатися
               <svg class="subscription-icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-telegram"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
